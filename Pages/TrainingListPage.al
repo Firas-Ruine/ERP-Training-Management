@@ -1,10 +1,11 @@
 page 50101 "Training List"
 {
     PageType = List;
+    ApplicationArea = All;
+    UsageCategory = Lists;
     SourceTable = Training;
     Caption = 'Training List';
     CardPageID = 50102;
-
 
     layout
     {

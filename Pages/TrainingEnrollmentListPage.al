@@ -1,6 +1,8 @@
 page 50105 "Training Enrollment List"
 {
     PageType = List;
+    ApplicationArea = All;
+    UsageCategory = Lists;
     SourceTable = "Training Enrollment";
     Caption = 'Training Enrollment List';
 
