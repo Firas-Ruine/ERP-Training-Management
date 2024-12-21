@@ -15,8 +15,8 @@ table 50106 "Training Cues"
         field(2; "Total Trainings"; Integer)
         {
             FieldClass = FlowField;
-            CalcFormula = count(Training);
-            Caption = 'Total Number of Trainings';
+            CalcFormula = count(Training where(Status = const(Planned)));
+            Caption = 'Total Number of Planned Trainings' ;
         }
     }
 

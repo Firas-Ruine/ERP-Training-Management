@@ -34,6 +34,33 @@ page 50101 "Training List"
                     Page.Run(Page::"Training Card", Rec);
                 end;
             }
+
+            action(Enroll)
+            {
+                Caption = 'Enroll';
+                trigger OnAction()
+                begin
+                    Page.Run(Page::"Training Enrollment Card", Rec);
+                end;
+            }
+
+            action(Report)
+            {
+                Caption = 'Training Report';
+                Image = Report;
+                Promoted = true;
+                PromotedCategory = Report;
+                ApplicationArea = All;
+                trigger OnAction()
+                var
+                    Training_L: Record "Training";
+                    TrainingStatsRepor_L: Report "Training Stats Report";
+                begin
+                    CurrPage.SetSelectionFilter(Training_L);
+                    TrainingStatsRepor_L.SetTableView(Training_L);
+                    TrainingStatsRepor_L.Run();
+                end;
         }
     }
+}
 }

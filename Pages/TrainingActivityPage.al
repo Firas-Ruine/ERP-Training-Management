@@ -14,6 +14,7 @@ page 50106 "Trainning Statistics Area"
                 field("Total Trainings"; Rec."Total Trainings")
                 {
                     ApplicationArea = Basic, Suite;
+                    DrillDownPageId = "Training List";
                     Caption = 'Number of Trainings';
                 }
             }

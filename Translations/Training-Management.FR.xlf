@@ -100,7 +100,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Training Cues - Field Id - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2992804356 - Field 4120259691 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Total Number of Trainings</source>
+          <source>Total Number of Planned Trainings</source>
           <target>Nombre total de formations</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Training Cues - Field Total Trainings - Property Caption</note>
@@ -163,7 +163,6 @@
           <source>Welcome</source>
           <target></target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Custom Headline RC - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1953520288 - Control 1257310099 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
