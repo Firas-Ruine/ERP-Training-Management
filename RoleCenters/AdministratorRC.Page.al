@@ -55,6 +55,26 @@ page 50107 "Administrator RoleCenter"
         }
         area(Sections)
         {
+            group(Reports)
+            {
+                action("Training Stats Report")
+                {
+                    RunObject = Report "Training Stats Report";
+                }
+            }
+
+            group(RH)
+            {
+                action("Employee List")
+                {
+                    RunObject = Page "Employee List";
+                }
+
+                action("Add Employee")
+                {
+                    RunObject = Page "Employee Card";
+                }
+            }
             group(Trainings)
             {
                 action(Training)
@@ -78,12 +98,6 @@ page 50107 "Administrator RoleCenter"
                 }
             }
         }
-        // area(Embedding)
-        // {
-        //     action(EmbeddingAction)
-        //     {
-        //         RunObject = Page ObjectName;
-        //     }
-        // }
+
     }
 }

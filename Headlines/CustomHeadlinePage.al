@@ -4,7 +4,7 @@ page 50110 "Custom Headline RC"
     ApplicationArea = All;
     SourceTable = "Headline Table";
     UsageCategory = Administration;
-    Caption = 'Welcome';
+    Caption = 'Welcome to the Training Center';
 
     layout
     {

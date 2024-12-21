@@ -15,7 +15,7 @@ page 50106 "Trainning Statistics Area"
                 {
                     ApplicationArea = Basic, Suite;
                     DrillDownPageId = "Training List";
-                    Caption = 'Number of Trainings';
+                    Caption = 'Number of pending trainings';
                 }
             }
         }

@@ -134,7 +134,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Administrator RoleCenter - Control Training Activity - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1953520288 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Welcome</source>
+          <source>Welcome to the Training Center</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Custom Headline RC - Property Caption</note>
         </trans-unit>
@@ -274,7 +274,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Training List - Action ViewCard - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 31673456 - Control 4120259691 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Number of Trainings</source>
+          <source>Number of pending trainings</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Trainning Statistics Area - Control Total Trainings - Property Caption</note>
         </trans-unit>

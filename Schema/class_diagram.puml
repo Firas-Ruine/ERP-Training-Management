@@ -1,0 +1,55 @@
+@startuml training_class_diagram
+
+class Training {
+  + Code: Code[20]
+  + Description: Text[100]
+  + Category: Code[10]
+  + Level: TrainingLevel
+  + Status: TrainingStatus
+  + Trainer: Text[100]
+  + Duration: Integer
+}
+
+
+class TrainingEnrollment {
+  + EntryNo: Integer
+  + EmployeeNo: Code[20]
+  + TrainingCode: Code[20]
+  + EnrollmentDate: Date
+  + CompletionStatus: TrainingStatus
+}
+
+
+class TrainingCategory {
+  + Code: Code[10]
+  + Description: Text[100]
+}
+
+
+class EmployeeExtension <<extension>> {
+  + LastTrainingDate: Date
+}
+
+
+enum TrainingLevel {
+  Beginner
+  Intermediate
+  Advanced
+}
+
+
+enum TrainingStatus {
+  Planned
+  Ongoing
+  Completed
+}
+
+
+TrainingEnrollment --> Training : uses
+TrainingEnrollment --> Employee : references
+Training --> TrainingCategory : categorized_by
+Training --> TrainingLevel
+Training --> TrainingStatus
+TrainingEnrollment --> TrainingStatus
+
+@enduml
