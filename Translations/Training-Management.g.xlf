@@ -283,6 +283,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Training Stats Report - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 972784502 - Control 3843269594 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 866835530">
+          <source>The date of the last training</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Employe Date Ext - Control LastTrainingDate - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3044542669 - Field 3843269594 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1498446062">
           <source>Last Training Date</source>
           <note from="Developer" annotates="general" priority="2"></note>

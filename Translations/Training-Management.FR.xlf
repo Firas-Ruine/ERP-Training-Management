@@ -167,14 +167,14 @@
         </trans-unit>
         <trans-unit id="Page 1953520288 - Control 1257310099 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source></source>
-          <target></target>
+          <target>[NAB: REVIEW]</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source contains only white-space, consider using 'Locked = true' to avoid translation of unnecessary texts. This note can be toggled with the setting 'NAB.PreferLockedTranslations'.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Custom Headline RC - Control HeadlineContainer - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1953520288 - Control 329424276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source></source>
-          <target></target>
+          <target>[NAB: REVIEW]</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source contains only white-space, consider using 'Locked = true' to avoid translation of unnecessary texts. This note can be toggled with the setting 'NAB.PreferLockedTranslations'.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Custom Headline RC - Control Title - Property Caption</note>
@@ -313,16 +313,14 @@
         </trans-unit>
         <trans-unit id="Page 2268902318 - Action 2754844058 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Enroll</source>
-            <target>Inscrire</target>
+          <target>Inscrire</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Training List - Action Enroll - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2268902318 - Action 3375155882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Training Report</source>
-            <target>Rapport de formation</target>
+          <target>Rapport de formation</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Training List - Action Report - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2268902318 - Action 3572635251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -339,10 +337,16 @@
         </trans-unit>
         <trans-unit id="Report 4235333145 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Training Stats Report</source>
-            <target>Rapport des statistiques de formation</target>
+          <target>Rapport des statistiques de formation</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Training Stats Report - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 972784502 - Control 3843269594 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 866835530">
+          <source>The date of the last training</source>
+            <target>La date de la dernière formation</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Training Stats Report - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Employe Date Ext - Control LastTrainingDate - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="TableExtension 3044542669 - Field 3843269594 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1498446062">
           <source>Last Training Date</source>
