@@ -23,7 +23,14 @@ report 50100 "Training Stats Report"
                 DataItemLink = TrainingCode = FIELD(Code);
                 DataItemLinkReference = Training;
 
-                column(EmployeeNo; EmployeeNo) { }
+                dataitem(Employee; Employee)
+                {
+                    DataItemLink = "No." = FIELD(EmployeeNo);
+                    DataItemLinkReference = TrainingEnrollment;
+                    column(FirstName; "First Name") { }
+                    column(LastName; "Last Name") { }
+                }
+
 
                 column(EnrollmentDate; EnrollmentDate) { }
 

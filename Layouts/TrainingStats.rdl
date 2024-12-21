@@ -19,13 +19,16 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>6.78822cm</Width>
+                  <Width>4.54455cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>6.78822cm</Width>
+                  <Width>5.294cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>6.78822cm</Width>
+                  <Width>4.68883cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>4.3729cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -41,7 +44,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Employé</Value>
+                                  <Value>Prénom</Value>
                                   <Style>
                                     <FontFamily>Fira Code</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -54,6 +57,41 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox5">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Nom</Value>
+                                  <Style>
+                                    <FontFamily>Fira Code</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox5</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -144,14 +182,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox5">
+                        <Textbox Name="FirstName">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!EmployeeNo.Value</Value>
+                                  <Value>=Fields!FirstName.Value</Value>
                                   <Style>
                                     <FontFamily>Fira Code</FontFamily>
                                   </Style>
@@ -162,7 +200,41 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox5</rd:DefaultName>
+                          <rd:DefaultName>FirstName</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="LastName">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!LastName.Value</Value>
+                                  <Style>
+                                    <FontFamily>Fira Code</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>LastName</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -253,6 +325,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -265,10 +338,11 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
             <Top>0.13068cm</Top>
             <Left>0.16087cm</Left>
-            <Height>1.88383cm</Height>
-            <Width>20.36467cm</Width>
+            <Height>1.88384cm</Height>
+            <Width>18.90028cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -279,7 +353,7 @@
         <Height>5.08cm</Height>
         <Style />
       </Body>
-      <Width>20.71603cm</Width>
+      <Width>20.67603cm</Width>
       <Page>
         <PageHeader>
           <Height>4.09419cm</Height>
@@ -644,14 +718,17 @@ End Function
         <Field Name="CompanyPhone">
           <DataField>CompanyPhone</DataField>
         </Field>
-        <Field Name="EmployeeNo">
-          <DataField>EmployeeNo</DataField>
-        </Field>
         <Field Name="EnrollmentDate">
           <DataField>EnrollmentDate</DataField>
         </Field>
         <Field Name="CompletionStatus">
           <DataField>CompletionStatus</DataField>
+        </Field>
+        <Field Name="FirstName">
+          <DataField>FirstName</DataField>
+        </Field>
+        <Field Name="LastName">
+          <DataField>LastName</DataField>
         </Field>
       </Fields>
       <Query>
