@@ -60,6 +60,7 @@ page 50107 "Administrator RoleCenter"
                 action("Training Stats Report")
                 {
                     RunObject = Report "Training Stats Report";
+                    ApplicationArea = All;
                 }
             }
 
@@ -68,11 +69,15 @@ page 50107 "Administrator RoleCenter"
                 action("Employee List")
                 {
                     RunObject = Page "Employee List";
+                    ApplicationArea = All;
+
                 }
 
                 action("Add Employee")
                 {
                     RunObject = Page "Employee Card";
+                    ApplicationArea = All;
+
                 }
             }
             group(Trainings)
@@ -80,21 +85,29 @@ page 50107 "Administrator RoleCenter"
                 action(Training)
                 {
                     RunObject = Page "Training List";
+                    ApplicationArea = All;
+
                 }
 
                 action(TrainingCard)
                 {
                     RunObject = Page "Training Card";
+                    ApplicationArea = All;
+
                 }
 
                 action(TrainingEnrollmentList)
                 {
                     RunObject = Page "Training Enrollment List";
+                    ApplicationArea = All;
+
                 }
 
                 action(TrainingEnrollmentCard)
                 {
                     RunObject = Page "Training Enrollment Card";
+                    ApplicationArea = All;
+
                 }
             }
         }
