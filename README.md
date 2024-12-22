@@ -12,24 +12,23 @@ This module provides functionality to manage employee training within an organiz
 
 ```
 /TrainingManagementModule
-├── /Tables
-│   ├── TrainingTable.al                # Training table definition
-│   ├── TrainingCategoryTable.al        # Training category table
-│   ├── TrainingEnrollmentTable.al      # Training enrollment table
-│   ├── EmployeeExtensionTable.al       # Employee table extension
-├── /Pages
-│   ├── TrainingListPage.al             # Training list page
-│   ├── TrainingCardPage.al             # Training card page
-│   ├── TrainingEnrollmentListPage.al   # Training enrollment list
-│   ├── TrainingEnrollmentCardPage.al   # Training enrollment card
-│   ├── TrainingCategoryListPage.al     # Training category page
-├── /Codeunits
-│   ├── TrainingManagementLogic.al      # Business logic
-├── /Enums
-│   ├── TrainingLevelEnum.al            # Enum for training levels
-│   ├── TrainingStatusEnum.al           # Enum for training statuses
-├── app.json                            # Application configuration
-└── launch.json                         # Deployment configuration
+├── .alpackages                        # AL language packages
+├── .snapshots                         # Backup snapshots for development
+├── .vscode                            # Visual Studio Code settings
+├── Codeunits                          # Business logic implementation
+├── Cues                               # Cue definitions for dashboards
+├── Enums                              # Enum definitions for training levels and statuses
+├── Headlines                          # Headlines for Role Centers
+├── Layouts                            # Custom layouts for pages or reports
+├── Pages                              # Page definitions for lists and cards
+├── Reports                            # Report definitions (if any)
+├── RoleCenters                        # Role Center definitions
+├── Schema                             # Database schema and relationships
+├── Tables                             # Table and table extensions
+├── Translations                       # Localization files
+├── app.json                           # Application configuration
+├── README.md                          # Project documentation
+└── HelloWorld.al                      # Placeholder or example AL file
 ```
 
 ---
@@ -114,31 +113,10 @@ The database structure consists of three main tables and one extended table:
 
 ---
 
-### **Diagram Summary**
+### **Class Diagram**
 
-The **ER diagram** would look like this:
+![Class Diagram](./Schema/class_diagram.png)
 
-```
-+------------------+       +--------------------+       +--------------------+
-|  Training        |       | Training Category  |       | Training Enrollment|
-+------------------+       +--------------------+       +--------------------+
-| Code (PK)       |<------| Code (PK)          |       | EntryNo (PK)       |
-| Description     |       | Description        |       | EmployeeNo (FK)    |
-| Category (FK)   |       +--------------------+       | TrainingCode (FK)  |
-| Level           |                                       | EnrollmentDate     |
-| Status          |                                       | CompletionStatus   |
-| Trainer         |                                       +--------------------+
-| Duration        |
-+------------------+
-         |
-         v
-+------------------+
-| Employee (Ext)   |
-+------------------+
-| No. (PK)         |
-| LastTrainingDate |
-+------------------+
-```
 
 ---
 
